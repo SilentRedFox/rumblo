@@ -1,0 +1,55 @@
+.introPage { min-height: 100vh; background: var(--surface); display: flex; flex-direction: column; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px 16px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.04em; }
+.backBtn { display: flex; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--mid); padding: 0; }
+.introBody { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 28px; text-align: center; }
+.badge { width: 100px; height: 100px; border-radius: 24px; background: var(--black); display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
+.badgeLetter { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--white); letter-spacing: 0.04em; }
+.introBody h1 { font-family: 'Bebas Neue', sans-serif; font-size: 3.2rem; margin-bottom: 12px; }
+.introBody p { color: var(--mid); font-size: 1rem; line-height: 1.6; max-width: 280px; margin-bottom: 48px; }
+.introActions { width: 100%; display: flex; flex-direction: column; gap: 10px; }
+.gamePage { min-height: 100vh; background: var(--black); color: var(--white); display: flex; flex-direction: column; }
+.gameNav { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px 16px; border-bottom: 1px solid #222; }
+.gameLogo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.04em; color: var(--white); }
+.timerWrap { padding: 12px 24px 20px; }
+.timerSecs { text-align: right; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 6px; }
+.timerTrack { height: 5px; background: #222; border-radius: 3px; overflow: hidden; }
+.timerFill { height: 100%; background: var(--green); border-radius: 3px; transition: width 1s linear, background 0.5s; }
+.timerFill.warning { background: var(--amber); }
+.timerFill.danger { background: var(--red); }
+.gameBody { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 24px; }
+.categoryLabel { font-size: 1rem; font-weight: 500; color: #aaa; text-align: center; margin-bottom: 20px; }
+.inputWrap { position: relative; margin-bottom: 12px; }
+.gameInput { width: 100%; padding: 16px 48px 16px 18px; background: #1a1a1a; border: 1.5px solid #333; border-radius: 12px; color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 1.1rem; outline: none; transition: border-color 0.15s; }
+.gameInput:focus { border-color: var(--green); }
+.gameInput.shake { animation: shake 0.35s ease; }
+.gameInput.warnFlash { border-color: var(--amber) !important; }
+.clearBtn { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); background: #333; border: none; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.85rem; }
+.clearBtn:hover { background: #444; }
+.feedbackMsg { text-align: center; font-size: 0.88rem; min-height: 22px; margin-bottom: 12px; color: transparent; }
+.feedbackWarning { color: var(--amber); }
+.scoreLine { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; }
+.scoreCount { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--green); line-height: 1; }
+.scoreLabel { font-size: 0.82rem; color: #666; }
+.answersGrid { display: flex; flex-wrap: wrap; gap: 8px; flex: 1; align-content: flex-start; overflow-y: auto; }
+.answerPill { background: var(--green); color: #fff; border-radius: 20px; padding: 7px 14px; font-size: 0.85rem; font-weight: 500; animation: popIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.resultPage { min-height: 100vh; background: var(--bg); display: flex; flex-direction: column; }
+.resultBody { flex: 1; padding: 32px 28px 48px; }
+.scoreWrap { text-align: center; padding: 32px 0 28px; }
+.resultLabel { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); margin-bottom: 8px; }
+.bigScore { font-family: 'Bebas Neue', sans-serif; font-size: 8rem; line-height: 1; color: var(--black); animation: countUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.resultMsg { font-size: 1rem; color: var(--mid); margin-top: 8px; }
+.divider { height: 1px; background: var(--border); margin: 24px 0; }
+.statsGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+.statCard { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.statVal { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; line-height: 1; }
+.statLbl { font-size: 0.75rem; color: var(--mid); margin-top: 4px; }
+.yourAnswers { margin-bottom: 28px; }
+.yourAnswersLabel { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mid); margin-bottom: 12px; }
+.resultPills { display: flex; flex-wrap: wrap; gap: 8px; }
+.resultPill { background: var(--green); color: #fff; border-radius: 20px; padding: 7px 14px; font-size: 0.85rem; font-weight: 500; }
+.btnPrimary { display: block; width: 100%; padding: 15px; background: var(--black); color: var(--white); border: none; border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.15s; text-align: center; }
+.btnPrimary:hover { background: #222; }
+.btnPrimary:active { transform: scale(0.97); }
+.btnSecondary { display: block; width: 100%; padding: 15px; background: transparent; color: var(--black); border: 1.5px solid var(--border); border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+.btnSecondary:hover { background: var(--border); }

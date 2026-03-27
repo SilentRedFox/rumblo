@@ -1,0 +1,17 @@
+.page { min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; padding: 60px 28px 48px; background: var(--bg); }
+.hero { text-align: center; }
+.logo { font-family: 'Bebas Neue', sans-serif; font-size: 3.2rem; letter-spacing: 0.04em; margin-bottom: 8px; }
+.hero p { color: var(--mid); font-size: 0.95rem; }
+.card { background: var(--surface); border-radius: 20px; border: 1px solid var(--border); padding: 24px; }
+.tabs { display: flex; background: var(--bg); border-radius: 10px; padding: 4px; margin-bottom: 24px; }
+.tab { flex: 1; padding: 10px; border: none; background: transparent; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500; cursor: pointer; color: var(--mid); transition: all 0.15s; }
+.tab.active { background: var(--surface); font-weight: 600; color: var(--black); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 0.78rem; font-weight: 600; margin-bottom: 6px; color: #555; }
+.field input { width: 100%; padding: 14px 16px; border: 1.5px solid var(--border); border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 1rem; background: var(--bg); color: var(--black); outline: none; transition: border-color 0.15s; }
+.field input:focus { border-color: var(--black); background: white; }
+.error { color: var(--red); font-size: 0.82rem; margin-bottom: 12px; }
+.btnPrimary { display: block; width: 100%; padding: 15px; margin-top: 8px; background: var(--black); color: var(--white); border: none; border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+.btnPrimary:hover { background: #222; }
+.btnPrimary:active { transform: scale(0.97); }
+.btnPrimary:disabled { opacity: 0.6; cursor: not-allowed; }

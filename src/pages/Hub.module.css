@@ -1,0 +1,22 @@
+.page { min-height: 100vh; background: var(--bg); display: flex; flex-direction: column; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px 16px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 10; }
+.logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.04em; }
+.avatarBtn { width: 36px; height: 36px; border-radius: 50%; background: var(--black); color: var(--white); border: none; cursor: pointer; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; display: flex; align-items: center; justify-content: center; }
+.content { padding: 24px; flex: 1; }
+.greeting { margin-bottom: 24px; }
+.label { display: block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 4px; }
+.greeting h1 { font-size: 1.6rem; font-weight: 600; }
+.streakBar { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+.streakIcon { font-size: 1.6rem; }
+.streakInfo strong { display: block; font-size: 1rem; font-weight: 700; }
+.streakInfo span { font-size: 0.8rem; color: var(--mid); }
+.sectionLabel { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 14px; }
+.challengeCard { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; transition: all 0.15s; text-align: left; font-family: 'DM Sans', sans-serif; }
+.challengeCard:hover:not(.done):not(.soon) { border-color: var(--black); transform: translateY(-1px); }
+.challengeCard.done { opacity: 0.65; cursor: default; }
+.challengeCard.soon { opacity: 0.45; cursor: default; }
+.cardName { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 0.04em; line-height: 1; margin-bottom: 4px; }
+.cardDesc { font-size: 0.82rem; color: var(--mid); }
+.playChip { background: var(--black); color: var(--white); border-radius: 20px; padding: 8px 18px; font-size: 0.8rem; font-weight: 700; }
+.doneChip { background: var(--green); color: #fff; border-radius: 20px; padding: 8px 16px; font-size: 0.85rem; font-weight: 700; }
+.soonChip { font-size: 0.78rem; color: var(--mid); font-weight: 600; }

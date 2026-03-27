@@ -1,0 +1,16 @@
+.page { min-height: 100vh; background: var(--bg); display: flex; flex-direction: column; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px 16px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.04em; }
+.backBtn { display: flex; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--mid); padding: 0; }
+.body { padding: 28px 24px; flex: 1; }
+.profileHeader { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+.avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--black); color: var(--white); display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; flex-shrink: 0; }
+.profileInfo h2 { font-size: 1.2rem; font-weight: 600; }
+.profileInfo span { font-size: 0.82rem; color: var(--mid); }
+.sectionLabel { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 14px; }
+.statsGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 32px; }
+.statTile { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 16px; }
+.val { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; line-height: 1; }
+.lbl { font-size: 0.75rem; color: var(--mid); margin-top: 4px; }
+.signOutBtn { width: 100%; background: none; border: 1.5px solid var(--border); border-radius: 12px; padding: 13px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--red); cursor: pointer; font-weight: 500; }
+.signOutBtn:hover { background: #fff0f0; }
